@@ -1,0 +1,131 @@
+
+.grid {
+    display: grid;
+}
+
+@media (min-width: 90rem) {
+    .grid.grid1 {
+        /*
+ took the help from IAT 235 Notes
+ */
+        display: inline-block;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2rem;
+        grid-auto-flow: row;
+    }
+}
+
+.center2 {
+
+    text-align: center;
+    margin: 4rem;
+}
+
+.pic {
+    width: 900px;
+    height: auto;
+}
+img{
+    width: 600px;
+    height: auto;
+} 
+
+.pic2 {
+    width: 100%;
+    height: 100%
+}
+
+.marginz{
+    margin: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.marginz1{
+    margin: 0rem;
+
+    text-align: center;
+}
+
+.nav-size{
+    font-size: 2rem;
+}
+
+.grid {
+    display: grid;
+}
+
+@media (min-width: 50rem) {
+    .grid.add-gutters {
+        /*
+took the help from IAT 235 Notes
+*/
+        /* adding gutters to the columns */
+        grid-column-gap: 0rem;
+        grid-row-gap: 0rem;
+    }
+}
+
+@media (min-width: 50rem) {
+    .grid.gridz1 {
+        /*
+took the help from IAT 235 Notes
+*/
+        grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    text-align: justify;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: normal;
+    background-color: rgb(59, 59, 59);
+    color: rgb(207, 205, 205);
+    padding: 0.5rem;
+
+    /*took the help of the TA to add the buttons*/
+}
+
+.nav-item:hover, .nav-item:focus {
+    color: white;
+}
+
+
+
+.hotel {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.nav-item:hover, .nav-item:focus {
+    color: white;
+    text-decoration: none;
+}
+
+

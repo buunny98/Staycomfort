@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    /* adding the border box model */
+    /*
+    took the help from IAT 235 Notes
+    */
+}
+
+body {
+    margin: 0;
+    background-color: #e6fdfc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.center {
+    text-align: center;
+
+}
+
+.center2 {
+    text-align: center;
+    align-items: center;
+    
+}
+
+
+.design {
+    background-position: center center;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.marginz {
+    margin: 2rem;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.view {
+    padding: 1.4rem;
+    margin: 0%;
+    display: block;
+    color: white;
+    background-color: rgb(54, 54, 54);
+}
+
+.colorz {
+    color: black
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(243, 243, 243);
+}
+
+.centered {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bodyDesc {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+}
+
+.headcolor {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+    margin-right: 3.5px;
+}
+
+hr {
+    border: 0.07rem solid rgb(112, 112, 112);
+    background-color: rgb(112, 112, 112);
+}
+
+a {
+    /*
+		Setting colours for elements can be done in a variety of ways. You can use just the colour name 'blue', you can use a HEX value '#00AAFF', you can specify an rgb value 'rgb(0,200,255)', and you can specify an rgb value with alpha (or opacity) using 'rgba(0,200,255,0.8)' (80%).
+	*/
+    color: rgb(150, 150, 150);
+    /*
+		The transition property makes it very easy to create smooth transitions for different CSS properties. In this case, with the two statements below we are specifying that we want to transition the 'color' property over 0.5 seconds. Note that you have to have another state for the element - example below in a:hover - for it to actually make use of the transition.
+	*/
+    transition-property: color;
+    transition-duration: 0.4s;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: rgb(50, 50, 50);
+    /*
+		The text-decoration property allows us to add or remove underlining. In this case we are removing it.
+	*/
+    text-decoration: none;
+}
+
+p, ul, ol {
+    max-width: 80rem;
+    /* took help from teh tutorial files, shortening the lenght of the p tag.*/
+    text-align: justify;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    opacity: 1;
+    /*adding responsiveness to the image so it can move according to the size of the browser.*/
+    transition-duration: 0.4s;
+}
+
+.one, .two, .three, .four, .yup {
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+form {
+    line-height: 2;
+}
+
+a:hover img, a:focus img {
+    opacity: 80%;
+}
+
+.head {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.8rem;
+}
+
+.headDescrip {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+}
+
+.subhead {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+}
+
+.subheadDesc {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+}
+
+.wr {
+    display: inline-block;
+    padding: 0.5rem;
+    font-weight: inherit;
+    color: rgb(255, 255, 255);
+    background: rgb(48, 48, 48);
+}
+
+.wr:hover, .wr:focus {
+    opacity: 80%;
+}
+
+.yup1 {
+    display: inline;
+    text-align: right;
+    vertical-align: initial;
+}
+
+.wr2:hover, .wr2:focus {
+    background: rgb(236, 233, 233);
+    padding: 0.2rem;
+}
+
+.nav-item {
+    font-size: 1rem;
+    text-align: justify;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: normal;
+    background-color: rgb(59, 59, 59);
+    color: rgb(207, 205, 205);
+    padding: 0.5rem;
+    margin-top: -1em;
+    /*took the help of the TA to add the buttons*/
+}
+
+.hotel {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.45rem;
+    color: whitesmoke;
+}
+
+.nav-item:hover, .nav-item:focus {
+    color: white;
+}
+
+.pad {
+    padding-bottom: 3rem;
+    text-rendering: optimizeSpeed;
+    text-decoration: underline;
+}
+
+.grid {
+    display: grid;
+}
+
+@media (max-width: 50rem) {
+    .grid.add-gutters {
+        /*
+        took the help from IAT 235 Notes
+        */
+        /* adding gutters to the columns */
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+}
+
+@media (min-width: 50rem) {
+    .grid.add-gutters {
+        /*
+    took the help from IAT 235 Notes
+    */
+        /* adding gutters to the columns */
+        grid-column-gap: 0rem;
+        grid-row-gap: 0rem;
+    }
+}
+
+@media (min-width: 50rem) {
+    .grid.grid4 {
+        /*
+    took the help from IAT 235 Notes
+    */
+        grid-template-columns: 4.5fr 0.7fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media (min-width: 50rem) {
+    .grid.grid6 {
+        /*
+    took the help from IAT 235 Notes
+    */
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media (min-width: 90rem) {
+    .grid.grid2 {
+        /*
+      took the help from IAT 235 Notes
+      */
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media (min-width: 70rem) {
+    .grid.grid3 {
+        /*
+      took the help from IAT 235 Notes
+      */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: auto;
+    }
+}
+
+@media (min-width: 90rem) {
+    .grid.grid1 {
+        /*
+      took the help from IAT 235 Notes
+      */
+        display: inline-block;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2rem;
+        grid-auto-flow: row;
+    }
+}
+
+code {
+    font-family: Consolas, "courier new";
+    color: crimson;
+    background-color: #f1f1f1;
+    border-top: 0rem;
+    font-size: 105%;
+}
+
+/* took help from the website "https://waaz.xyz/adding-external-link-indicator-with-css/" */
+
+/*Took online help from https: //www.w3schools.com/howto/howto_js_filter_elements.asp */
+
+a[class="select"]:after {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+    margin: 0px 3px 0px 5px;
+    color: black;
+    font-family: italic;
+}
+
+a[class="select"] {
+    font-style: italic;
+}
+
+.filterDiv {
+    float: none;
+    background-color: white;
+    color: black;
+    width: 100%;
+    line-height: 1rem;
+    text-align: center;
+    margin: 2px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* Style the buttons */
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
